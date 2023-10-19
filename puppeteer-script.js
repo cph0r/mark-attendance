@@ -9,15 +9,15 @@ const puppeteer = require('puppeteer'); // v13.0.0 or later
     {
         const targetPage = page;
         await targetPage.setViewport({
-            width: 1537,
-            height: 542
+            width: 1792,
+            height: 716
         })
     }
     {
         const targetPage = page;
         const promises = [];
         promises.push(targetPage.waitForNavigation());
-        await targetPage.goto('https://c2fo.greythr.com/uas/portal/auth/login?login_challenge=19044d4341dd410eb1279a5f9fbfe91b');
+        await targetPage.goto('https://c2fo.greythr.com/uas/portal/auth/login');
         await Promise.all(promises);
     }
     {
@@ -46,8 +46,8 @@ const puppeteer = require('puppeteer'); // v13.0.0 or later
         ], targetPage, { timeout, visible: true });
         await element.click({
             offset: {
-                x: 180.453125,
-                y: 28,
+                x: 195.203125,
+                y: 6,
             },
         });
     }
@@ -161,11 +161,11 @@ const puppeteer = require('puppeteer'); // v13.0.0 or later
                 'aria/Sign In'
             ],
             [
-                'body > app > ng-component > div > div > div.container-fluid.app-container.px-0 > div > ghr-home > div.page.page-home.ng-star-inserted > div > gt-home-dashboard > div > div:nth-child(2) > gt-component-loader > gt-attendance-info > div > div > div.btn-container.mt-3x.flex.flex-row-reverse.justify-between.ng-star-inserted > gt-button',
+                'body > app > ng-component > div > div > div.container-fluid.app-container.px-0 > div > ghr-home > div.page.page-home.ng-star-inserted > div > gt-home-dashboard > div > div:nth-child(2) > gt-component-loader > gt-attendance-info > div > div > div.btn-container.mt-3x.flex.flex-row-reverse.justify-between.ng-star-inserted > gt-button:nth-child(1)',
                 'button'
             ],
             [
-                'xpath//html/body/app/ng-component/div/div/div[2]/div/ghr-home/div[2]/div/gt-home-dashboard/div/div[2]/gt-component-loader/gt-attendance-info/div/div/div[3]/gt-button',
+                'xpath//html/body/app/ng-component/div/div/div[2]/div/ghr-home/div[2]/div/gt-home-dashboard/div/div[2]/gt-component-loader/gt-attendance-info/div/div/div[3]/gt-button[1]',
                 'xpath//button'
             ],
             [
@@ -177,11 +177,11 @@ const puppeteer = require('puppeteer'); // v13.0.0 or later
                 'aria/Sign In'
             ],
             [
-                'body > app > ng-component > div > div > div.container-fluid.app-container.px-0 > div > ghr-home > div.page.page-home.ng-star-inserted > div > gt-home-dashboard > div > div:nth-child(2) > gt-component-loader > gt-attendance-info > div > div > div.btn-container.mt-3x.flex.flex-row-reverse.justify-between.ng-star-inserted > gt-button',
+                'body > app > ng-component > div > div > div.container-fluid.app-container.px-0 > div > ghr-home > div.page.page-home.ng-star-inserted > div > gt-home-dashboard > div > div:nth-child(2) > gt-component-loader > gt-attendance-info > div > div > div.btn-container.mt-3x.flex.flex-row-reverse.justify-between.ng-star-inserted > gt-button:nth-child(1)',
                 'button'
             ],
             [
-                'xpath//html/body/app/ng-component/div/div/div[2]/div/ghr-home/div[2]/div/gt-home-dashboard/div/div[2]/gt-component-loader/gt-attendance-info/div/div/div[3]/gt-button',
+                'xpath//html/body/app/ng-component/div/div/div[2]/div/ghr-home/div[2]/div/gt-home-dashboard/div/div[2]/gt-component-loader/gt-attendance-info/div/div/div[3]/gt-button[1]',
                 'xpath//button'
             ],
             [
@@ -190,72 +190,8 @@ const puppeteer = require('puppeteer'); // v13.0.0 or later
         ], targetPage, { timeout, visible: true });
         await element.click({
             offset: {
-                x: 49.125,
-                y: 13.5,
-            },
-        });
-    }
-    {
-        const targetPage = page;
-        await scrollIntoViewIfNeeded([
-            [
-                'aria/Select'
-            ],
-            [
-                'body > app > ng-component > div > div > div.container-fluid.app-container.px-0 > div > ghr-home > div.page.page-home.ng-star-inserted > div > gt-home-dashboard > gt-popup-modal > div > div > div.flex.flex-col.flex-1.attendance-info > div.mb-3\\.5x.ng-star-inserted > gt-dropdown',
-                'div > div.dropdown > button'
-            ],
-            [
-                'xpath//html/body/app/ng-component/div/div/div[2]/div/ghr-home/div[2]/div/gt-home-dashboard/gt-popup-modal/div/div/div[1]/div[1]/gt-dropdown',
-                'xpath//div/div[2]/button'
-            ]
-        ], targetPage, timeout);
-        const element = await waitForSelectors([
-            [
-                'aria/Select'
-            ],
-            [
-                'body > app > ng-component > div > div > div.container-fluid.app-container.px-0 > div > ghr-home > div.page.page-home.ng-star-inserted > div > gt-home-dashboard > gt-popup-modal > div > div > div.flex.flex-col.flex-1.attendance-info > div.mb-3\\.5x.ng-star-inserted > gt-dropdown',
-                'div > div.dropdown > button'
-            ],
-            [
-                'xpath//html/body/app/ng-component/div/div/div[2]/div/ghr-home/div[2]/div/gt-home-dashboard/gt-popup-modal/div/div/div[1]/div[1]/gt-dropdown',
-                'xpath//div/div[2]/button'
-            ]
-        ], targetPage, { timeout, visible: true });
-        await element.click({
-            offset: {
-                x: 256.5,
-                y: 21.5,
-            },
-        });
-    }
-    {
-        const targetPage = page;
-        await scrollIntoViewIfNeeded([
-            [
-                'body > app > ng-component > div > div > div.container-fluid.app-container.px-0 > div > ghr-home > div.page.page-home.ng-star-inserted > div > gt-home-dashboard > gt-popup-modal > div > div > div.flex.flex-col.flex-1.attendance-info > div.mb-3\\.5x.ng-star-inserted > gt-dropdown',
-                'div > div.dropdown > div > div > div:nth-child(4)'
-            ],
-            [
-                'xpath//html/body/app/ng-component/div/div/div[2]/div/ghr-home/div[2]/div/gt-home-dashboard/gt-popup-modal/div/div/div[1]/div[1]/gt-dropdown',
-                'xpath//div/div[2]/div/div/div[4]'
-            ]
-        ], targetPage, timeout);
-        const element = await waitForSelectors([
-            [
-                'body > app > ng-component > div > div > div.container-fluid.app-container.px-0 > div > ghr-home > div.page.page-home.ng-star-inserted > div > gt-home-dashboard > gt-popup-modal > div > div > div.flex.flex-col.flex-1.attendance-info > div.mb-3\\.5x.ng-star-inserted > gt-dropdown',
-                'div > div.dropdown > div > div > div:nth-child(4)'
-            ],
-            [
-                'xpath//html/body/app/ng-component/div/div/div[2]/div/ghr-home/div[2]/div/gt-home-dashboard/gt-popup-modal/div/div/div[1]/div[1]/gt-dropdown',
-                'xpath//div/div[2]/div/div/div[4]'
-            ]
-        ], targetPage, { timeout, visible: true });
-        await element.click({
-            offset: {
-                x: 167,
-                y: 11,
+                x: 42.125,
+                y: 19.5,
             },
         });
     }
@@ -283,8 +219,8 @@ const puppeteer = require('puppeteer'); // v13.0.0 or later
         ], targetPage, { timeout, visible: true });
         await element.click({
             offset: {
-                x: 49.125,
-                y: 17.5,
+                x: 54.625,
+                y: 15.5,
             },
         });
     }
